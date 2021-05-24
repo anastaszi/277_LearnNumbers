@@ -18,5 +18,7 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>We will save new picture to the album</string>
 </dict>
 </plist>

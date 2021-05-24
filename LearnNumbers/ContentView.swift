@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var start = false;
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        if (start) {
+            DrawingTool()
+        } else {
+            LearnButton(start: $start)
+            
+        }
     }
 }
 

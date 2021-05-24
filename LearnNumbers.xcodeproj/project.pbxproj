@@ -13,6 +13,15 @@
 		5D144BCA265AF7FE006E44F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D144BC9265AF7FE006E44F3 /* Preview Assets.xcassets */; };
 		5D144BD5265AF7FF006E44F3 /* LearnNumbersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D144BD4265AF7FF006E44F3 /* LearnNumbersTests.swift */; };
 		5D144BE0265AF7FF006E44F3 /* LearnNumbersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D144BDF265AF7FF006E44F3 /* LearnNumbersUITests.swift */; };
+		5D144BF2265AF832006E44F3 /* LearnButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D144BF1265AF832006E44F3 /* LearnButton.swift */; };
+		5D144C03265B0FCE006E44F3 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D144C02265B0FCE006E44F3 /* SwiftUIView.swift */; };
+		5D144C09265B138B006E44F3 /* CoreMLClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D144C08265B138B006E44F3 /* CoreMLClassification.swift */; };
+		5D144C0E265B13CD006E44F3 /* MNISTClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5D144C0D265B13CD006E44F3 /* MNISTClassifier.mlmodel */; };
+		5D144C13265B18D0006E44F3 /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D144C12265B18D0006E44F3 /* Drawing.swift */; };
+		5D144C18265B190B006E44F3 /* DrawingTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D144C17265B190B006E44F3 /* DrawingTool.swift */; };
+		5D144C1D265B1964006E44F3 /* DrawingPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D144C1C265B1964006E44F3 /* DrawingPad.swift */; };
+		5D144C22265B1F50006E44F3 /* StartOverButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D144C21265B1F4F006E44F3 /* StartOverButton.swift */; };
+		5D144C27265B1F9A006E44F3 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D144C26265B1F9A006E44F3 /* ButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +54,16 @@
 		5D144BDB265AF7FF006E44F3 /* LearnNumbersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnNumbersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D144BDF265AF7FF006E44F3 /* LearnNumbersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnNumbersUITests.swift; sourceTree = "<group>"; };
 		5D144BE1265AF7FF006E44F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D144BF1265AF832006E44F3 /* LearnButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnButton.swift; sourceTree = "<group>"; };
+		5D144C02265B0FCE006E44F3 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		5D144C08265B138B006E44F3 /* CoreMLClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLClassification.swift; sourceTree = "<group>"; };
+		5D144C0D265B13CD006E44F3 /* MNISTClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MNISTClassifier.mlmodel; sourceTree = "<group>"; };
+		5D144C12265B18D0006E44F3 /* Drawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = "<group>"; };
+		5D144C17265B190B006E44F3 /* DrawingTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingTool.swift; sourceTree = "<group>"; };
+		5D144C1C265B1964006E44F3 /* DrawingPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingPad.swift; sourceTree = "<group>"; };
+		5D144C21265B1F4F006E44F3 /* StartOverButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartOverButton.swift; sourceTree = "<group>"; };
+		5D144C26265B1F9A006E44F3 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
+		5D144C2B265B1FE4006E44F3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +94,7 @@
 		5D144BB6265AF7F8006E44F3 = {
 			isa = PBXGroup;
 			children = (
+				5D144C2B265B1FE4006E44F3 /* README.md */,
 				5D144BC1265AF7F8006E44F3 /* LearnNumbers */,
 				5D144BD3265AF7FF006E44F3 /* LearnNumbersTests */,
 				5D144BDE265AF7FF006E44F3 /* LearnNumbersUITests */,
@@ -95,6 +115,9 @@
 		5D144BC1265AF7F8006E44F3 /* LearnNumbers */ = {
 			isa = PBXGroup;
 			children = (
+				5D144C07265B1360006E44F3 /* ML */,
+				5D144C01265B0FBA006E44F3 /* DrawingPad */,
+				5D144BF0265AF815006E44F3 /* Buttons */,
 				5D144BC2265AF7F9006E44F3 /* LearnNumbersApp.swift */,
 				5D144BC4265AF7F9006E44F3 /* ContentView.swift */,
 				5D144BC6265AF7FE006E44F3 /* Assets.xcassets */,
@@ -128,6 +151,36 @@
 				5D144BE1265AF7FF006E44F3 /* Info.plist */,
 			);
 			path = LearnNumbersUITests;
+			sourceTree = "<group>";
+		};
+		5D144BF0265AF815006E44F3 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				5D144BF1265AF832006E44F3 /* LearnButton.swift */,
+				5D144C21265B1F4F006E44F3 /* StartOverButton.swift */,
+				5D144C26265B1F9A006E44F3 /* ButtonStyle.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		5D144C01265B0FBA006E44F3 /* DrawingPad */ = {
+			isa = PBXGroup;
+			children = (
+				5D144C02265B0FCE006E44F3 /* SwiftUIView.swift */,
+				5D144C12265B18D0006E44F3 /* Drawing.swift */,
+				5D144C17265B190B006E44F3 /* DrawingTool.swift */,
+				5D144C1C265B1964006E44F3 /* DrawingPad.swift */,
+			);
+			path = DrawingPad;
+			sourceTree = "<group>";
+		};
+		5D144C07265B1360006E44F3 /* ML */ = {
+			isa = PBXGroup;
+			children = (
+				5D144C0D265B13CD006E44F3 /* MNISTClassifier.mlmodel */,
+				5D144C08265B138B006E44F3 /* CoreMLClassification.swift */,
+			);
+			path = ML;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +312,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D144C1D265B1964006E44F3 /* DrawingPad.swift in Sources */,
 				5D144BC5265AF7F9006E44F3 /* ContentView.swift in Sources */,
+				5D144C13265B18D0006E44F3 /* Drawing.swift in Sources */,
+				5D144BF2265AF832006E44F3 /* LearnButton.swift in Sources */,
+				5D144C09265B138B006E44F3 /* CoreMLClassification.swift in Sources */,
+				5D144C03265B0FCE006E44F3 /* SwiftUIView.swift in Sources */,
+				5D144C22265B1F50006E44F3 /* StartOverButton.swift in Sources */,
 				5D144BC3265AF7F9006E44F3 /* LearnNumbersApp.swift in Sources */,
+				5D144C18265B190B006E44F3 /* DrawingTool.swift in Sources */,
+				5D144C27265B1F9A006E44F3 /* ButtonStyle.swift in Sources */,
+				5D144C0E265B13CD006E44F3 /* MNISTClassifier.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
