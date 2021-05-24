@@ -9,6 +9,6 @@ import Foundation
 import SwiftUI
 
 
-struct Drawing {
+struct Drawing: Equatable {
     var points: [CGPoint] = [CGPoint]()
 }

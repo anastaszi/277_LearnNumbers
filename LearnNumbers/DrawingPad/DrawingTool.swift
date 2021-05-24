@@ -6,54 +6,50 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct DrawingTool: View {
     @StateObject var coreMLClassification = CoreMLClassification.shared
     @State private var currentDrawing: Drawing = Drawing()
-    @State private var drawings: [Drawing] = [Drawing]()
+    @State var step = 0;
+    @State var task = 0;
     
     var body: some View {
         VStack(alignment: .center) {
-            HStack{
-                Text("Draw something")
-                    .font(.largeTitle)
-                StartOverButton(drawings: $drawings)
+            HStack(alignment: .center, spacing: 26.0){
+                SoundButton(playSound: {outloudTask()})
+                ScoreView(score: $coreMLClassification.score)
+                NextButton(nextAction: {createTask()})
+            
             }
+            
             DrawingPad(currentDrawing: $currentDrawing,
-                       drawings: $drawings)
-            Button("Save to image") {
-                let image = self.getImage()
-                coreMLClassification.updateClassifications(for: image)
-                UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+                       drawings: $coreMLClassification.drawings)
+                .onAppear{
+                    self.createTask()
+                    coreMLClassification.score = 0;
+                }
+            HStack{
+                StartOverButton(drawings: $coreMLClassification.drawings)
             }
-            Text("Classification results: \(coreMLClassification.text ?? "")").padding()
             }
-        }
-    func getImage () -> UIImage {
-         let renderer = UIGraphicsImageRenderer(size: CGSize(width: 400, height: 500))
-         let img = renderer.image { (context) in
-             context.fill(CGRect(origin: .zero, size: CGSize(width: 400, height: 500)))
-             context.cgContext.setLineWidth(20.0)
-             context.cgContext.setStrokeColor(UIColor.white.cgColor)
-             for drawing in self.drawings {
-                 let points = drawing.points
-                 if points.count > 1 {
-                     for i in 0..<points.count-1 {
-                         let current = points[i]
-                         let next = points[i+1]
-                         context.cgContext.move(to: current)
-                         context.cgContext.addLine(to: next)
-                     }
-                 }
-                 
-             }
-             context.cgContext.drawPath(using: .stroke)
-         
-         }
-         return img
-     }
+    }
     
+    func outloudTask() {
+        let utterance = AVSpeechUtterance(string: "Can you draw me number \(self.task)?");
+        //utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
+        utterance.rate = 0.5
+
+        let synthesizer = AVSpeechSynthesizer()
+        synthesizer.speak(utterance)
+    }
     
+   func createTask() {
+        self.task = Int.random(in: 0...9);
+        coreMLClassification.correctAnswer = self.task;
+        coreMLClassification.drawings = [Drawing]();
+    self.outloudTask();
+    }
 
 }
 
