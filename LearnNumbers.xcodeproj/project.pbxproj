@@ -24,8 +24,6 @@
 		5D144C1D265B1964006E44F3 /* DrawingPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D144C1C265B1964006E44F3 /* DrawingPad.swift */; };
 		5D144C22265B1F50006E44F3 /* StartOverButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D144C21265B1F4F006E44F3 /* StartOverButton.swift */; };
 		5D144C27265B1F9A006E44F3 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D144C26265B1F9A006E44F3 /* ButtonStyle.swift */; };
-		5D144C31265B81B0006E44F3 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D144C30265B81B0006E44F3 /* UserData.swift */; };
-		5D144C39265B81CE006E44F3 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D144C38265B81CE006E44F3 /* TestModel.swift */; };
 		5D144C41265C1DAD006E44F3 /* NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D144C40265C1DAD006E44F3 /* NextButton.swift */; };
 		5D144C46265C22B1006E44F3 /* SoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D144C45265C22B1006E44F3 /* SoundButton.swift */; };
 		5D144C4B265C3101006E44F3 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D144C4A265C3101006E44F3 /* ScoreView.swift */; };
@@ -73,8 +71,6 @@
 		5D144C21265B1F4F006E44F3 /* StartOverButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartOverButton.swift; sourceTree = "<group>"; };
 		5D144C26265B1F9A006E44F3 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 		5D144C2B265B1FE4006E44F3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		5D144C30265B81B0006E44F3 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
-		5D144C38265B81CE006E44F3 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
 		5D144C40265C1DAD006E44F3 /* NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButton.swift; sourceTree = "<group>"; };
 		5D144C45265C22B1006E44F3 /* SoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundButton.swift; sourceTree = "<group>"; };
 		5D144C4A265C3101006E44F3 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
@@ -140,7 +136,6 @@
 		5D144BC1265AF7F8006E44F3 /* LearnNumbers */ = {
 			isa = PBXGroup;
 			children = (
-				5D144C2F265B811E006E44F3 /* UserData */,
 				5D144C07265B1360006E44F3 /* ML */,
 				5D144C01265B0FBA006E44F3 /* DrawingPad */,
 				5D144BF0265AF815006E44F3 /* Buttons */,
@@ -209,15 +204,6 @@
 				5D144C08265B138B006E44F3 /* CoreMLClassification.swift */,
 			);
 			path = ML;
-			sourceTree = "<group>";
-		};
-		5D144C2F265B811E006E44F3 /* UserData */ = {
-			isa = PBXGroup;
-			children = (
-				5D144C30265B81B0006E44F3 /* UserData.swift */,
-				5D144C38265B81CE006E44F3 /* TestModel.swift */,
-			);
-			path = UserData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,8 +345,6 @@
 				5D144C13265B18D0006E44F3 /* Drawing.swift in Sources */,
 				5D144BF2265AF832006E44F3 /* LearnButton.swift in Sources */,
 				5D144C09265B138B006E44F3 /* CoreMLClassification.swift in Sources */,
-				5D144C39265B81CE006E44F3 /* TestModel.swift in Sources */,
-				5D144C31265B81B0006E44F3 /* UserData.swift in Sources */,
 				5D144C22265B1F50006E44F3 /* StartOverButton.swift in Sources */,
 				5D144BC3265AF7F9006E44F3 /* LearnNumbersApp.swift in Sources */,
 				5D144C18265B190B006E44F3 /* DrawingTool.swift in Sources */,
