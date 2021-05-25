@@ -1,6 +1,6 @@
 #  Learn Numbers App
 
-The objective of the app: provide a tool for kids to master their handwriting (numbers 0-9). \
+The objective of the app: provide a tool for kids to master their handwriting (numbers 0-9). 
 
 The interaction with the app consists of several steps: 
 * Get a task to draw a specific number (voice); 
@@ -20,8 +20,8 @@ UI is intentionally very mimimalistic so kids will focus on the main objective o
 
 #### Welcome Screen
 ![](./Screenshots/welcome_screen.png)
-![](./Screenshots/main_screen1.png)
-![](./Screenshots/main_screen2.png)
+![](./Screenshots/main_screen1.PNG)
+![](./Screenshots/main_screen2.PNG)
 
 
 [Presentation](https://docs.google.com/presentation/d/1AL1wHtlfOP6GxTJ0PGTGrZhgO_mOZERdVcokmqaUE3U/edit?usp=sharing) \
